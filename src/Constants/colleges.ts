@@ -1,4 +1,4 @@
-import { Thakur , Vjti , Xavier , Anjuman , DyPatil , DonBosco , KjSomaiya , Lokmanya , Pillai , Rajiv } from "./Media"
+import { Thakur , Vjti , Xavier , Anjuman , DyPatil , DonBosco , KjSomaiya , Lokmanya , Pillai , Rajiv } from "./media.ts"
 
 
 
