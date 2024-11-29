@@ -12,10 +12,10 @@ const Perfect_college = () => {
 
       {/* Wrapper to center the Tabs */}
       <div className="flex justify-center">
-        <Tabs aria-label="Tabs with underline" variant="underline">
+        <Tabs aria-label="Tabs with underline">
           <Tabs.Item active title="Engineering">
             <p className="text-center text-gray-600">
-              <Card className="w-[100%]">
+              <Card className="w-full">
                 {colleges
                   .filter((item) => item.type === "Engineering")
                   .map((elem) => (
@@ -24,7 +24,7 @@ const Perfect_college = () => {
                       key={elem.name}
                     >
                       {/* Image Section */}
-                      <div className="h-[100px] w-[100px]">
+                      <div className="size-[100px]">
                         <img
                           src={elem.image}
                           alt="College-Pic"
