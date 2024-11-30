@@ -34,7 +34,9 @@ const Perfect_college = () => {
 
                       {/* Text Section */}
                       <div>
-                        <p className="text-lg text-left font-semibold">{elem.name}</p>
+                        <p className="text-left text-lg font-semibold">
+                          {elem.name}
+                        </p>
                         <p className="text-gray-500">{elem.address}</p>
                       </div>
                     </div>
@@ -46,14 +48,66 @@ const Perfect_college = () => {
           {/* Dashboard Tab */}
           <Tabs.Item title="Commerce And Banking">
             <p className="text-center text-gray-600">
-              The Dashboard gives you an overview of activities.
+              <Card className="w-full">
+                {colleges
+                  .filter((item) => item.type === "Commerce")
+                  .map((elem) => (
+                    <div
+                      className="mb-4 flex items-center gap-4"
+                      key={elem.name}
+                    >
+                      {/* Image Section */}
+                      <div className="size-[100px]">
+                        <img
+                          src={elem.image}
+                          alt="College-Pic"
+                          className="h-full w-full rounded object-cover"
+                        />
+                      </div>
+
+                      {/* Text Section */}
+                      <div>
+                        <p className="text-left text-lg font-semibold">
+                          {elem.name}
+                        </p>
+                        <p className="text-gray-500">{elem.address}</p>
+                      </div>
+                    </div>
+                  ))}
+              </Card>
             </p>
           </Tabs.Item>
 
           {/* Settings Tab */}
           <Tabs.Item title="Hotel Management">
-            <p className="text-center text-gray-600">
-              Manage your account settings here.
+          <p className="text-center text-gray-600">
+              <Card className="w-full">
+                {colleges
+                  .filter((item) => item.type === "HM")
+                  .map((elem) => (
+                    <div
+                      className="mb-4 flex items-center gap-4"
+                      key={elem.name}
+                    >
+                      {/* Image Section */}
+                      <div className="size-[100px]">
+                        <img
+                          src={elem.image}
+                          alt="College-Pic"
+                          className="h-full w-full rounded object-cover"
+                        />
+                      </div>
+
+                      {/* Text Section */}
+                      <div>
+                        <p className="text-left text-lg font-semibold">
+                          {elem.name}
+                        </p>
+                        <p className="text-gray-500">{elem.address}</p>
+                      </div>
+                    </div>
+                  ))}
+              </Card>
             </p>
           </Tabs.Item>
 
@@ -65,7 +119,33 @@ const Perfect_college = () => {
           </Tabs.Item>
           <Tabs.Item title="Medical">
             <p className="text-center text-gray-600">
-              Get in touch with us through this section.
+              <Card className="w-full">
+                {colleges
+                  .filter((item) => item.type === "Medical")
+                  .map((elem) => (
+                    <div
+                      className="mb-4 flex items-center gap-4"
+                      key={elem.name}
+                    >
+                      {/* Image Section */}
+                      <div className="size-[100px]">
+                        <img
+                          src={elem.image}
+                          alt="College-Pic"
+                          className="h-full w-full rounded object-cover"
+                        />
+                      </div>
+
+                      {/* Text Section */}
+                      <div>
+                        <p className="text-left text-lg font-semibold">
+                          {elem.name}
+                        </p>
+                        <p className="text-gray-500">{elem.address}</p>
+                      </div>
+                    </div>
+                  ))}
+              </Card>
             </p>
           </Tabs.Item>
           <Tabs.Item title="Law">
