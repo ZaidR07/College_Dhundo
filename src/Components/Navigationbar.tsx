@@ -14,10 +14,10 @@ export function Navigationbar() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="#" active>
+        <Navbar.Link href="/" active>
           Home
         </Navbar.Link>
-        <Navbar.Link href="#">Colleges</Navbar.Link>
+        <Navbar.Link href="/Colleges">Colleges</Navbar.Link>
         <Navbar.Link href="#">Exams</Navbar.Link>
         <Navbar.Link href="#">Courses</Navbar.Link>
         <Navbar.Link href="#">Contact</Navbar.Link>

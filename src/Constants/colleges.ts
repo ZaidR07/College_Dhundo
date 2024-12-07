@@ -27,7 +27,16 @@ import {
   Grant,
   LokmanyaMedical,
   Jaslok,
-  Sies
+  Sies,
+  IHM,
+  ITM,
+  DYPATILHM,
+  Bharti,
+  MumbaiCollege,
+  ThakurHm,
+  CII,
+  RizviHm,
+  ICE
 } from "./media.ts";
 
 export const colleges = [
@@ -230,30 +239,55 @@ export const colleges = [
     type : "HM",
     name : "Institute of Hotel Management, Catering Technology and Applied Nutrition",
     address : "2RFM+9XH, Swatantryaveer Savarkar Rd, Aparna Vaibhav Society, Dadar West, Dadar, Mumbai, Maharashtra 400028",
-    image: Sies,
+    image: IHM,
   },
   {
     type : "HM",
     name : "Dr. D. Y. Patil Institute of Hotel Management and Catering",
     address : "Dr. D. Y. Patil Institute of Hotel Management & Catering Technology, Tathawade, Pimpri-Chinchwad, Maharashtra 411033",
-    image: Sies,
+    image: DYPATILHM,
   },
   {
     type : "HM",
     name : "Bharati Vidyapeeth College of Hotel & Tourism Management Studies",
     address : "8, YMCA Marg, next to Rajiv Gandhi Ground, Sector 3A, CBD Belapur, Navi Mumbai, Maharashtra 400614",
-    image: Sies,
+    image: Bharti,
   },
   {
     type : "HM",
     name : "ITM Institute of Hotel Management",
     address : "2nd and 3rd Floor, Plot No. D-222/28, Near Fugro India, ABB and Airtel Lane, MIDC, S Central Rd, Shiravane, Nerul, Navi Mumbai, Maharashtra 400706",
-    image: Sies,
+    image: ITM,
   },
   {
     type : "HM",
-    name : "ITM Institute of Hotel Management",
-    address : "2nd and 3rd Floor, Plot No. D-222/28, Near Fugro India, ABB and Airtel Lane, MIDC, S Central Rd, Shiravane, Nerul, Navi Mumbai, Maharashtra 400706",
-    image: Sies,
+    name : "Mumbai College Of Hotel Management",
+    address : "behind st Thomas school, opp. Timeless restaurant, Sheetal Nagar, Mira Road East, Mumbai, Mira Bhayandar, Maharashtra 401107",
+    image: MumbaiCollege,
   },
+  {
+    type : "HM",
+    name : "Thakur Institute of Hotel Management",
+    address : "90 Feet Rd, Kandivali, Thakur Complex, Kandivali East, Mumbai, Maharashtra 400101",
+    image: ThakurHm,
+  },
+  {
+    type : "HM",
+    name : "CII Institute of Hospitality",
+    address : "2nd floor, AISSMS College of Hotel Management and Catering Technology, New building, Shivajinagar, Pune, Maharashtra 411005",
+    image: CII,
+  },
+  {
+    type : "HM",
+    name : "Rizvi College of Hotel Management",
+    address : "3R8G+M85, New Rizvi Educational Complex, Off Carter Road, Bandra (W), Mumbai, Maharashtra 400050",
+    image: RizviHm,
+  },
+  {
+    type : "HM",
+    name : "ICE College of Hotel Management & Catering Technology",
+    address : "Guruvarya Balaram Patil College, Darave Road, Behind Police Station Sector 23, Nerul East, Navi Mumbai, Maharashtra 400706",
+    image: ICE,
+  },
+  
 ];

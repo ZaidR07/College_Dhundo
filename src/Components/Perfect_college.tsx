@@ -12,15 +12,15 @@ const Perfect_college = () => {
 
       {/* Wrapper to center the Tabs */}
       <div className="flex justify-center">
-        <Tabs aria-label="Tabs with underline">
-          <Tabs.Item active title="Engineering">
+        <Tabs aria-label="Tabs with underline" className="flex gap-x-10">
+          <Tabs.Item active title="Engineering" className="">
             <p className="text-center text-gray-600">
-              <Card className="w-full">
+              <Card className=" w-[60vw]">
                 {colleges
                   .filter((item) => item.type === "Engineering")
                   .map((elem) => (
                     <div
-                      className="mb-4 flex items-center gap-4"
+                      className="mb-4  flex items-center gap-4"
                       key={elem.name}
                     >
                       {/* Image Section */}
@@ -37,7 +37,9 @@ const Perfect_college = () => {
                         <p className="text-left text-lg font-semibold">
                           {elem.name}
                         </p>
-                        <p className="text-gray-500">{elem.address}</p>
+                        <p className=" text-wrap text-left text-gray-500 ">
+                          {elem.address}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -48,7 +50,7 @@ const Perfect_college = () => {
           {/* Dashboard Tab */}
           <Tabs.Item title="Commerce And Banking">
             <p className="text-center text-gray-600">
-              <Card className="w-full">
+              <Card className="w-[60vw]">
                 {colleges
                   .filter((item) => item.type === "Commerce")
                   .map((elem) => (
@@ -61,7 +63,7 @@ const Perfect_college = () => {
                         <img
                           src={elem.image}
                           alt="College-Pic"
-                          className="h-full w-full rounded object-cover"
+                          className="size-full rounded object-cover"
                         />
                       </div>
 
@@ -70,7 +72,9 @@ const Perfect_college = () => {
                         <p className="text-left text-lg font-semibold">
                           {elem.name}
                         </p>
-                        <p className="text-gray-500">{elem.address}</p>
+                        <p className="text-wrap text-left text-gray-500">
+                          {elem.address}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -80,8 +84,8 @@ const Perfect_college = () => {
 
           {/* Settings Tab */}
           <Tabs.Item title="Hotel Management">
-          <p className="text-center text-gray-600">
-              <Card className="w-full">
+            <p className="text-center text-gray-600">
+              <Card className="w-[60vw]">
                 {colleges
                   .filter((item) => item.type === "HM")
                   .map((elem) => (
@@ -103,7 +107,9 @@ const Perfect_college = () => {
                         <p className="text-left text-lg font-semibold">
                           {elem.name}
                         </p>
-                        <p className="text-gray-500">{elem.address}</p>
+                        <p className="text-wrap text-left text-gray-500">
+                          {elem.address}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -113,13 +119,13 @@ const Perfect_college = () => {
 
           {/* Contacts Tab */}
           <Tabs.Item title="Arts & Humanities">
-            <p className="text-center text-gray-600">
-              Get in touch with us through this section.
-            </p>
+            <Card className="w-[60vw]">
+              <p className=" text-center text-2xl text-gray-600">Coming Soon</p>
+            </Card>
           </Tabs.Item>
-          <Tabs.Item title="Medical">
+          <Tabs.Item title="Medical & Pharmacy">
             <p className="text-center text-gray-600">
-              <Card className="w-full">
+              <Card className="w-[60vw]">
                 {colleges
                   .filter((item) => item.type === "Medical")
                   .map((elem) => (
@@ -132,7 +138,7 @@ const Perfect_college = () => {
                         <img
                           src={elem.image}
                           alt="College-Pic"
-                          className="h-full w-full rounded object-cover"
+                          className="size-full rounded object-cover"
                         />
                       </div>
 
@@ -141,7 +147,9 @@ const Perfect_college = () => {
                         <p className="text-left text-lg font-semibold">
                           {elem.name}
                         </p>
-                        <p className="text-gray-500">{elem.address}</p>
+                        <p className="text-wrap text-left text-gray-500">
+                          {elem.address}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -149,9 +157,9 @@ const Perfect_college = () => {
             </p>
           </Tabs.Item>
           <Tabs.Item title="Law">
-            <p className="text-center text-gray-600">
-              Get in touch with us through this section.
-            </p>
+            <Card className="w-[60vw]">
+              <p className=" text-center text-2xl text-gray-600">Coming Soon</p>
+            </Card>
           </Tabs.Item>
         </Tabs>
       </div>
