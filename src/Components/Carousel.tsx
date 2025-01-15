@@ -7,7 +7,7 @@ import { image1 , image2 , image3 , image4 , image5 } from "../Constants/media.t
 
 export function CarouselComponent() {
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-[80vh]">
+    <div className="h-56 sm:h-[80vh] ">
       <Carousel pauseOnHover>
         <img src={image1} alt="..." />
         <img src={image2} alt="..." />
