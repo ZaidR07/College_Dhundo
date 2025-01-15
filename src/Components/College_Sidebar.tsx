@@ -23,11 +23,11 @@ const College_Sidebar: React.FC<CollegeSidebarProps> = ({ setFilteredlist }) => 
     let filtered = colleges;
 
     if (stream.length > 0) filtered = filtered.filter((item) => stream.includes(item.type));
-    if (degree.length > 0) filtered = filtered.filter((item) => degree.includes(item.degree));
-    if (location.length > 0) filtered = filtered.filter((item) => location.includes(item.location));
-    if (fees.length > 0) filtered = filtered.filter((item) => fees.includes(item.fees));
-    if (studyMode.length > 0) filtered = filtered.filter((item) => studyMode.includes(item.studyMode));
-    if (instituteType.length > 0) filtered = filtered.filter((item) => instituteType.includes(item.instituteType));
+    // if (degree.length > 0) filtered = filtered.filter((item) => degree.includes(item.degree));
+    // if (location.length > 0) filtered = filtered.filter((item) => location.includes(item.location));
+    // if (fees.length > 0) filtered = filtered.filter((item) => fees.includes(item.fees));
+    // if (studyMode.length > 0) filtered = filtered.filter((item) => studyMode.includes(item.studyMode));
+    // if (instituteType.length > 0) filtered = filtered.filter((item) => instituteType.includes(item.instituteType));
 
     setFilteredlist(filtered);
   };
