@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState , useCallback } from "react";
 import { colleges } from "../Constants/colleges";
 
 interface CollegeSidebarProps {
@@ -13,13 +13,14 @@ const College_Sidebar: React.FC<CollegeSidebarProps> = ({ setFilteredlist }) => 
   const [studyMode, setStudyMode] = useState<string[]>([]);
   const [instituteType, setInstituteType] = useState<string[]>([]);
 
+  
   const handleFilterChange = (category: string, value: string, setter: React.Dispatch<React.SetStateAction<string[]>>) => {
     setter((prev) =>
       prev.includes(value) ? prev.filter((item) => item !== value) : [...prev, value]
     );
   };
 
-  const applyFilter = () => {
+  const  applyFilter = useCallback(() => {
     let filtered = colleges;
 
     if (stream.length > 0) filtered = filtered.filter((item) => stream.includes(item.type));
@@ -30,11 +31,11 @@ const College_Sidebar: React.FC<CollegeSidebarProps> = ({ setFilteredlist }) => 
     // if (instituteType.length > 0) filtered = filtered.filter((item) => instituteType.includes(item.instituteType));
 
     setFilteredlist(filtered);
-  };
+  },[stream, setFilteredlist]);
 
   useEffect(() => {
     applyFilter();
-  }, [stream, degree, location, fees, studyMode, instituteType]);
+  }, [applyFilter]);
 
   const resetFilters = () => {
     setStream([]);
@@ -147,7 +148,7 @@ const College_Sidebar: React.FC<CollegeSidebarProps> = ({ setFilteredlist }) => 
 
       {/* Reset Filters Button */}
       <button
-        className="mt-4 p-2 bg-red-500 text-white font-semibold rounded"
+        className="mt-4 rounded bg-red-500 p-2 font-semibold text-white"
         onClick={resetFilters}
       >
         Reset Filters
