@@ -2,11 +2,11 @@ import { Carousel } from "flowbite-react";
 
 const Recommended_College = () => {
   return (
-    <div className="mt-24 size-full bg-slate-200 py-4">
-      <p className="mb-6 text-center text-4xl font-semibold text-[#155E75]">
+    <div className="mt-12 size-full bg-slate-200 py-4 lg:mt-24">
+      <p className="mb-6 text-center text-xl font-semibold text-[#155E75] lg:text-4xl">
         Top Colleges Recommended For You
       </p>
-      <div className="m-auto h-[35vh] w-[35%] ">
+      <div className="m-auto h-[20vh] w-[70%] lg:h-[35vh] lg:w-[35%] ">
         <Carousel slide={false}>
           <iframe
             width="560"

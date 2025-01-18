@@ -80,6 +80,7 @@ export const colleges = [
     address:
       "Juhu Versova Link Rd, behind HDFC Bank, Gharkul Society, Bharat Nagar, Versova, Andheri West, Mumbai, Maharashtra 400053",
     image: Rajiv,
+    shortaddress : "Andheri West",
     naac : 4
 
   },

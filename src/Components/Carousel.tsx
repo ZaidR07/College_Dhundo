@@ -1,5 +1,4 @@
 
-"use client";
 
 import { Carousel } from "flowbite-react";
 import { image1 , image2 , image3 , image4 , image5 } from "../Constants/media.ts";

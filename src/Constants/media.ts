@@ -42,6 +42,9 @@ import ThakurHm from "/assets/images/Thakur_hm.jfif";
 import CII from "/assets/images/CII.jfif";
 import RizviHm from "/assets/images/Rizvi_hm.jfif";
 import ICE from "/assets/images/Ice.jfif";
+import Contact1 from "/assets/images/contact1.webp";
+import Contact2 from "/assets/images/Contact2.avif";
+import Contact3 from "/assets/images/Contact3.jpeg";
 
 
 
@@ -49,4 +52,6 @@ import ICE from "/assets/images/Ice.jfif";
 
 
 
-export {image1 , image2 , image3 , image4 , image5 , Vjti , Thakur , Xavier, Anjuman , DonBosco , DyPatil , KjSomaiya , Lokmanya, Pillai , Rajiv , XavierCommerce , Bhavans , Dalmia , JaiHind , Mithibhai , RaPoddar , Rizvi , Saraf , Viva , Wilson , Topiwala , Tiss , Seth , SomaiyaMedical , RaPoddarMedical , Grant , LokmanyaMedical , Jaslok , Sies , IHM , DYPATILHM , Bharti , ITM , MumbaiCollege , ThakurHm , CII , RizviHm , ICE };
+
+
+export {image1 , image2 , image3 , image4 , image5 , Vjti , Thakur , Xavier, Anjuman , DonBosco , DyPatil , KjSomaiya , Lokmanya, Pillai , Rajiv , XavierCommerce , Bhavans , Dalmia , JaiHind , Mithibhai , RaPoddar , Rizvi , Saraf , Viva , Wilson , Topiwala , Tiss , Seth , SomaiyaMedical , RaPoddarMedical , Grant , LokmanyaMedical , Jaslok , Sies , IHM , DYPATILHM , Bharti , ITM , MumbaiCollege , ThakurHm , CII , RizviHm , ICE , Contact1 , Contact2 , Contact3};
