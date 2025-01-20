@@ -47,7 +47,7 @@ const College_Sidebar: React.FC<CollegeSidebarProps> = ({ setFilteredlist }) => 
   };
 
   return (
-    <section className="flex w-1/5 flex-col gap-3">
+    <section className="hidden  w-1/5 gap-3 lg:flex lg:flex-col">
       {/* College Stream */}
       <div className="border-2 border-[#0E7490] bg-cyan-50 p-4">
         <h2 className="text-lg font-semibold">College Stream :</h2>
