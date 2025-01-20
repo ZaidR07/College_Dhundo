@@ -4,7 +4,8 @@ import emailjs from "@emailjs/browser";
 import { useState, useRef } from "react";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement | null>(null);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -13,7 +14,8 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e : React.ChangeEvent<HTMLInputElement> ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+
     const { target } = e;
     const { name, value } = target;
 
@@ -62,10 +64,10 @@ const Contact = () => {
   return (
     <section className=" h-screen w-full justify-evenly lg:flex lg:min-h-screen">
       <div className="grid place-content-center">
-        <img src={Contact3} alt="" className=" w-[300px] lg:w-[500px]" />
+        <img src={Contact3} alt="" className=" w-[250px] lg:w-[500px]" />
       </div>
-      <div className="max-h-[85vh] md:w-2/5  rounded-lg px-8 pt-4">
-        <p className="text-2xl font-semibold text-[#155E75]">Get in touch</p>
+      <div className="max-h-[85vh] rounded-lg  px-8 pt-4 md:w-2/5">
+        <p className="text-xl font-semibold text-[#155E75] md:text-2xl">Get in touch</p>
        
 
         <form
@@ -82,7 +84,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your good name?"
               // eslint-disable-next-line tailwindcss/no-custom-classname
-              className="placeholder:text-secondary rounded-lg border-none border-[#155E75] bg-[#bfd8ee] px-6 py-4 font-medium  outline-none"
+              className="placeholder:text-secondary rounded-lg border-none border-[#155E75] bg-[#bfd8ee] font-medium outline-none md:px-6  md:py-4"
             />
           </label>
           <label className="flex flex-col">
@@ -94,18 +96,18 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your web address?"
               // eslint-disable-next-line tailwindcss/no-custom-classname
-              className="placeholder:text-secondary rounded-lg border-none border-[#155E75] bg-[#bfd8ee] px-6 py-4 font-medium  outline-none"
+              className="placeholder:text-secondary rounded-lg border-none border-[#155E75] bg-[#bfd8ee] font-medium outline-none md:px-6  md:py-4"
             />
           </label>
           <label className="flex flex-col">
             <span className="mb-2 font-medium text-[#155E75]">Your Message</span>
             <textarea
-              rows={4}
+              rows={3}
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="placeholder:text-secondary rounded-lg border-none border-[#155E75] bg-[#bfd8ee] px-6 py-4 font-medium  outline-none"
+              className="placeholder:text-secondary rounded-lg border-none border-[#155E75] bg-[#bfd8ee] font-medium outline-none md:px-6  md:py-4"
             />
           </label>
 

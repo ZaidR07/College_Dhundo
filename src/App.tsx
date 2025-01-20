@@ -4,6 +4,7 @@ import Colleges from "./Pages/Colleges";
 import Contact from "./Pages/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigationbar } from "./Components/Navigationbar";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           
         
       </Routes>
+      <Footer/>
       
     </BrowserRouter>
   );
